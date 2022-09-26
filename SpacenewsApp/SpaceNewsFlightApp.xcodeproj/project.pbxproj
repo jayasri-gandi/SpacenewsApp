@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B57FE928DC5DD90014818A /* SpaceNewsFlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B57FE828DC5DD90014818A /* SpaceNewsFlightAppApp.swift */; };
+		68B57FEB28DC5DD90014818A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B57FEA28DC5DD90014818A /* ContentView.swift */; };
+		68B57FED28DC5DDB0014818A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B57FEC28DC5DDB0014818A /* Assets.xcassets */; };
+		68B57FF028DC5DDB0014818A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B57FEF28DC5DDB0014818A /* Preview Assets.xcassets */; };
+		68B57FF828DC5E5C0014818A /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 68B57FF728DC5E5C0014818A /* CachedAsyncImage */; };
+		68B57FFB28DC5EA70014818A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 68B57FFA28DC5EA70014818A /* GoogleSignIn */; };
+		68B57FFD28DC5EA70014818A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68B57FFC28DC5EA70014818A /* GoogleSignInSwift */; };
+		68B5800028DC5EF80014818A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B57FFF28DC5EF80014818A /* APIClient.swift */; };
+		68B5800328DC5F460014818A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5800228DC5F460014818A /* Login.swift */; };
+		68B5800528DC5F720014818A /* SpaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5800428DC5F720014818A /* SpaceAPI.swift */; };
+		68B5800728DC5FA20014818A /* newsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5800628DC5FA20014818A /* newsView.swift */; };
+		68B5800928DC5FCF0014818A /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5800828DC5FCF0014818A /* NewsArticle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68B57FE528DC5DD90014818A /* SpaceNewsFlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceNewsFlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B57FE828DC5DD90014818A /* SpaceNewsFlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsFlightAppApp.swift; sourceTree = "<group>"; };
+		68B57FEA28DC5DD90014818A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68B57FEC28DC5DDB0014818A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68B57FEF28DC5DDB0014818A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68B57FFF28DC5EF80014818A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		68B5800228DC5F460014818A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		68B5800428DC5F720014818A /* SpaceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAPI.swift; sourceTree = "<group>"; };
+		68B5800628DC5FA20014818A /* newsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsView.swift; sourceTree = "<group>"; };
+		68B5800828DC5FCF0014818A /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
+		C412E60C28DED7AA005FB090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B57FE228DC5DD90014818A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B57FFD28DC5EA70014818A /* GoogleSignInSwift in Frameworks */,
+				68B57FF828DC5E5C0014818A /* CachedAsyncImage in Frameworks */,
+				68B57FFB28DC5EA70014818A /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68B57FDC28DC5DD90014818A = {
+			isa = PBXGroup;
+			children = (
+				68B57FE728DC5DD90014818A /* SpaceNewsFlightApp */,
+				68B57FE628DC5DD90014818A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68B57FE628DC5DD90014818A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B57FE528DC5DD90014818A /* SpaceNewsFlightApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B57FE728DC5DD90014818A /* SpaceNewsFlightApp */ = {
+			isa = PBXGroup;
+			children = (
+				C412E60C28DED7AA005FB090 /* Info.plist */,
+				68B5800128DC5F150014818A /* Views */,
+				68B57FFE28DC5EBF0014818A /* API */,
+				68B57FE828DC5DD90014818A /* SpaceNewsFlightAppApp.swift */,
+				68B57FEA28DC5DD90014818A /* ContentView.swift */,
+				68B57FEC28DC5DDB0014818A /* Assets.xcassets */,
+				68B57FEE28DC5DDB0014818A /* Preview Content */,
+			);
+			path = SpaceNewsFlightApp;
+			sourceTree = "<group>";
+		};
+		68B57FEE28DC5DDB0014818A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68B57FEF28DC5DDB0014818A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68B57FFE28DC5EBF0014818A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				68B57FFF28DC5EF80014818A /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		68B5800128DC5F150014818A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68B5800228DC5F460014818A /* Login.swift */,
+				68B5800428DC5F720014818A /* SpaceAPI.swift */,
+				68B5800628DC5FA20014818A /* newsView.swift */,
+				68B5800828DC5FCF0014818A /* NewsArticle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B57FE428DC5DD90014818A /* SpaceNewsFlightApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B57FF328DC5DDB0014818A /* Build configuration list for PBXNativeTarget "SpaceNewsFlightApp" */;
+			buildPhases = (
+				68B57FE128DC5DD90014818A /* Sources */,
+				68B57FE228DC5DD90014818A /* Frameworks */,
+				68B57FE328DC5DD90014818A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceNewsFlightApp;
+			packageProductDependencies = (
+				68B57FF728DC5E5C0014818A /* CachedAsyncImage */,
+				68B57FFA28DC5EA70014818A /* GoogleSignIn */,
+				68B57FFC28DC5EA70014818A /* GoogleSignInSwift */,
+			);
+			productName = SpaceNewsFlightApp;
+			productReference = 68B57FE528DC5DD90014818A /* SpaceNewsFlightApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B57FDD28DC5DD90014818A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					68B57FE428DC5DD90014818A = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 68B57FE028DC5DD90014818A /* Build configuration list for PBXProject "SpaceNewsFlightApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B57FDC28DC5DD90014818A;
+			packageReferences = (
+				68B57FF628DC5E5C0014818A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				68B57FF928DC5EA70014818A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 68B57FE628DC5DD90014818A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B57FE428DC5DD90014818A /* SpaceNewsFlightApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B57FE328DC5DD90014818A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B57FF028DC5DDB0014818A /* Preview Assets.xcassets in Resources */,
+				68B57FED28DC5DDB0014818A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B57FE128DC5DD90014818A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B5800928DC5FCF0014818A /* NewsArticle.swift in Sources */,
+				68B57FEB28DC5DD90014818A /* ContentView.swift in Sources */,
+				68B5800528DC5F720014818A /* SpaceAPI.swift in Sources */,
+				68B57FE928DC5DD90014818A /* SpaceNewsFlightAppApp.swift in Sources */,
+				68B5800028DC5EF80014818A /* APIClient.swift in Sources */,
+				68B5800328DC5F460014818A /* Login.swift in Sources */,
+				68B5800728DC5FA20014818A /* newsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		68B57FF128DC5DDB0014818A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68B57FF228DC5DDB0014818A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B57FF428DC5DDB0014818A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceNewsFlightApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceNewsFlightApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jayasree.SpaceNewsFlightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B57FF528DC5DDB0014818A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceNewsFlightApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceNewsFlightApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jayasree.SpaceNewsFlightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B57FE028DC5DD90014818A /* Build configuration list for PBXProject "SpaceNewsFlightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B57FF128DC5DDB0014818A /* Debug */,
+				68B57FF228DC5DDB0014818A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B57FF328DC5DDB0014818A /* Build configuration list for PBXNativeTarget "SpaceNewsFlightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B57FF428DC5DDB0014818A /* Debug */,
+				68B57FF528DC5DDB0014818A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68B57FF628DC5E5C0014818A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		68B57FF928DC5EA70014818A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68B57FF728DC5E5C0014818A /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68B57FF628DC5E5C0014818A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		68B57FFA28DC5EA70014818A /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68B57FF928DC5EA70014818A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		68B57FFC28DC5EA70014818A /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68B57FF928DC5EA70014818A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 68B57FDD28DC5DD90014818A /* Project object */;
+}
