@@ -11,6 +11,7 @@ import GoogleSignIn
 import UIKit
 import GoogleSignInSwift
 
+
 var lightGreyColour = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 let StoredUserName = "jayassree"
 let password = "123456789"
@@ -26,7 +27,7 @@ struct loginScreen: View {
             ZStack {
                 Color.black
                     .edgesIgnoringSafeArea(.all)
-                
+//                PushView(destination: newsView())
                 VStack {
                     HelloText()
                     userNameTextField(userName: $userName)
@@ -77,6 +78,7 @@ extension View{
                 }
                 guard user != nil else {return}
                 goHome()
+//                PushView(destination: newsView())
             } }
     }
     
@@ -117,6 +119,7 @@ extension View{
     public func goHome() {
         if let window = UIApplication.shared.windows.first {
             window.rootViewController = UIHostingController(rootView: spaceAPI())
+//            PushView(destination: newsView())
             window.makeKeyAndVisible()
         }
     }
@@ -145,6 +148,7 @@ struct HelloText: View {
 struct loginButtonContent : View {
     var body: some View {
         VStack {
+            
             Text("Login").font(.title)
                 .foregroundColor(.white).padding().frame(width:220, height: 60)
                 .background(Color.blue)

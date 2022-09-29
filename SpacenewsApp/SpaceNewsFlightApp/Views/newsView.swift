@@ -28,16 +28,22 @@ struct newsView: View {
         NavigationView{
             ScrollView {
                 HStack {
-                        Button {
-//                                GIDSignIn.sharedInstance.signOut()
-                        } label: {
+                     Button(action:{
+                            print("Log out")
+                            if let window = UIApplication.shared.windows.first {
+                                window.rootViewController = UIHostingController(rootView: loginScreen())
+                                window.makeKeyAndVisible()
+                            }
+                            
+                        }, label: {
                             Image(systemName:"power")
+                          
                                 .renderingMode(.template)
                                 .font(.system(size: 50))
                                 .foregroundColor(.black)
                                 .frame(width: 35,height: 35)
                                 .fontWeight(.bold)
-                        }
+                        })
                         .padding(.leading, 25)
                         Spacer()
                         Button {
@@ -63,17 +69,22 @@ struct newsView: View {
                         .font(.largeTitle)
                         .padding(.trailing, 150)
                         .padding(20)) {
-                        ForEach(data.news) { news in
-                            NewsArticle( imageurl: news.imageUrl, sisteName: news.newsSite ).onTapGesture {
-                                openUrl(URL(string: news.url)!)
+                            if data.news.count != 0 {
+                                ForEach(data.news) { news in
+                                    NewsArticle( imageurl: news.imageUrl, sisteName: news.newsSite ).onTapGesture {
+                                        openUrl(URL(string: news.url)!)
+                                    }
+                                }
+                            }else {
+                                Text("No Articles").fontWeight(.bold)
+                                    .font(.largeTitle).padding(.top)
                             }
-                        }
+                        
                     }
                 }
                 }
             }
         }
-    
     }
 
 struct newsView_Previews: PreviewProvider {

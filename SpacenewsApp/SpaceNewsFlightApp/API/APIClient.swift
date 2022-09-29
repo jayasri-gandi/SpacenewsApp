@@ -36,7 +36,6 @@ struct SpaceData : Codable, Identifiable {
             
             let spaceData = try! JSONDecoder().decode([SpaceData].self, from: data)
             
-            // Update the list to the latest data
             DispatchQueue.main.async {
                 print("Loaded new data successfully! Articles: \(spaceData.count)")
                 self.news = spaceData
